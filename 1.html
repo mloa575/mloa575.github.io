@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(32, 32, 32);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        *{
+            width: 0;
+            padding: 0;
+        }
+        .main{
+            width: 500px;
+            height: 200px;
+            margin: 40px auto;
+            position: relative;
+        }
+        .box{
+            width: 500px;
+            height: 200px;
+            margin: 40px auto;
+            background-color: rgb(49, 49, 49);
+            border-radius: 200px;
+            box-shadow: 0 1px 2px rgba(235, 178, 240, 0.1);
+            transform: scale(1);
+            position: relative;
+            transition: box-shadow,  1s ease-out;
+            transition: transform,  1s ease-out;
+        }
+        div.box:hover{
+            box-shadow: 0 5px 15px 15px rgba(0, 211, 11, 0.7);
+            transform: scale(1.1);
+        }
+        div.box:not(:hover){
+            transition: box-shadow,  1s linear;
+            transition: transform,  1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">     
+        <a href="大香蕉.mp4">
+            <div class="box"></div>
+        </a>     
+    </div>
+</body>
+</html>
